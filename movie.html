@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Movie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        select, button {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+        button {
+            background-color: #e74c3c;
+            color: #ecf0f1;
+            cursor: pointer;
+        }
+        select {
+            padding: 20px 40px;
+            font-size: 26px;
+            color: #333;
+            background-color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+
+        select:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        select:active {
+            transform: translateY(1px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            padding: 20px 40px;
+            font-size: 26px;
+            color: #fff;
+            background-color: #ff4b2b;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+        a {
+            padding: 15px 30px;
+            font-size: 22px;
+            color: #fff;
+            background-color: #ff4b2b;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        a:hover {
+            background-color: #ff416c;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+        a:active {
+            transform: translateY(1px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Movie</h1>
+        <select id="movie">
+            <option value="Movie 1">Movie 1</option>
+            <option value="Movie 2">Movie 2</option>
+            <option value="Movie 3">Movie 3</option>
+        </select>
+        <br>
+        <a href="seats.html">Next: Select Seats</a>
+    </div>
+</body>
+</html>

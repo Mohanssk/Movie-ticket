@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2c3e50, #ACB6E5);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button Styles */
+.button {
+    padding: 20px 40px;
+    font-size: 26px;
+    color: #fff;
+    background-color: #ff4b2b;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #ff416c;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Styles */
+input {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #34495e;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Seat Styles */
+.seats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: #7f8c8d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.seat.selected {
+    background-color: #27ae60;
+}
+
+.seat.occupied {
+    background-color: #c0392b;
+    cursor: not-allowed;
+}
+
+/* Link Styles */
+a {
+    padding: 15px 30px;
+    font-size: 22px;
+    color: #fff;
+    background-color: #ff4b2b;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+a:hover {
+    background-color: #ff416c;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+a:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
